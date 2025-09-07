@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffe0f0, #d0eaff);
+  color: #333;
+  line-height: 1.6;
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+header {
+  background: #ffc8e2;
+  padding: 1.2rem 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  animation: slideDown 1.5s ease-in-out;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Cherry Bomb One', cursive;
+  font-size: 1.8rem;
+  color: #d63384;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff1493;
+  transform: scale(1.1);
+}
+
+.hero, .content {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #ff69b4;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.9rem 2rem;
+  background-color: #ff69b4;
+  color: white;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff1493;
+  transform: scale(1.05);
+}
+
+.project-list {
+  list-style: none;
+  text-align: left;
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #ffffffa1;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.project-image {
+  display: block;
+  margin: 20px auto;  /* center */
+  max-width: 200px;   /* very small width */
+  height: auto;       /* keeps aspect ratio */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+footer {
+  padding: 1.2rem;
+  background-color: #fde0ee;
+  text-align: center;
+  color: #555;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+}
